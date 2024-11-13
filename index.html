@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Responsive Ecommerce Collection</title>
+    <!-- Link to external stylesheet file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>All Collection</h1>
+        <!-- Sort dropdown menu to filter products by price -->
+        <select id="sortDropMenu" onchange="sortHandler()">
+          <option hidden disabled selected>Sort by</option>
+          <option value="low">Low to High</option>
+          <option value="high">High to Low</option>
+        </select>
+      </div>
+      <!-- Button to load products-->
+      <button id="loadProductsBtn" type="button" class="load-products-btn">
+        Load Products
+      </button>
+       <!-- Product cards will be rendered here in the product grid -->
+      <div id="productGrid" class="product-grid"></div>
+    </div>
+     <!-- Link to External javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
